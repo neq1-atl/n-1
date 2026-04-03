@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n=1 | Simple Tools for Quiet Moments</title>
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="n=1 | Coming Soon">
+    <meta property="og:description" content="Refining in silence. Minimalist tools for your quiet moments.">
+    <meta property="og:image" content="images/ogp_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 準備中ページ専用のレイアウト調整 */
+        body {
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            align-items: center;
+            min-height: 100vh;
+            padding: 60px 20px;
+            box-sizing: border-box;
+        }
+
+        main {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+        }
+
+        .title-img {
+            height: 80px;
+            max-height: none; 
+            width: auto;
+        }
+
+        .status-tag {
+            font-size: 11px;
+            letter-spacing: 0.25em;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            font-weight: 700;
+            opacity: 0.8;
+        }
+
+        .headline {
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            color: var(--primary-color);
+            font-weight: 400;
+        }
+
+        /* フッターの微調整 */
+        footer {
+            text-align: center;
+        }
+        .footer-links {
+            margin-top: 8px;
+        }
+        .footer-links a {
+            font-size: 10px;
+            color: #ccc;
+            text-decoration: none;
+            letter-spacing: 0.05em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="images/title.png" alt="n=1" class="title-img">
+            <div class="profile-text">Simple Tools for Quiet Moments.</div>
+        </header>
+
+        <main>
+            <div class="status-tag">Work in progress</div>
+            <div class="headline">Refining in silence.</div>
+        </main>
+
+        <footer>
+            <div class="copyright">&copy; 2026 n=1</div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P91DCVD7WL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P91DCVD7WL');
+    </script>
+</body>
+</html>
