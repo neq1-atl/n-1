@@ -45,6 +45,23 @@
             color: var(--text-color);
             opacity: 0.9;
         }
+        .app-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0.5rem 0 1.5rem 0;
+        }
+        .app-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.4rem;
+        }
+        .app-list li::before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0.2rem;
+            font-weight: bold;
+        }
         .footer-action {
             margin-top: 4rem;
             padding-top: 2rem;
@@ -76,7 +93,10 @@
         <div class="policy-container content-card">
             <h1 class="policy-title">Privacy Policy</h1>
             
-            <p>n=1（以下「当方」）は、提供するウェブサイトおよびスマートフォン用アプリケーション（以下「本サービス」）における、ユーザーの情報の取扱いについて、以下の通り定めます。</p>
+            <p>n=1（以下「当方」）は、提供するウェブサイトおよび以下のスマートフォン用アプリケーション（以下「本サービス」）における、ユーザーの情報の取扱いについて、以下の通り定めます。</p>
+            <ul class="app-list">
+                <li>Fragments（パッケージ名: com.neq1.fragments）</li>
+            </ul>
 
             <h2>1. アクセス解析ツールについて</h2>
             <p>当方のウェブサイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。データの収集のためにCookie（クッキー）を使用していますが、これらは匿名で収集されており、個人を特定するものではありません。</p>
