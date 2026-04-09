@@ -14,92 +14,129 @@
 
     <link rel="stylesheet" href="style.css">
     <style>
-        /* 準備中ページ専用のレイアウト調整 */
-        body {
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; 
-            align-items: center;
-            min-height: 100vh;
-            padding: 60px 20px;
-            box-sizing: border-box;
-        }
-
-        main {
-            flex-grow: 1;
+        .main-card {
+            max-width: 480px;
+            margin: 0 auto;
+            padding: 60px 40px;
             display: flex;
             flex-direction: column;
             justify-content: center; 
             align-items: center;
+            min-height: 400px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            text-align: center;
         }
 
         .title-img {
-            height: 80px;
-            max-height: none; 
+            height: 72px;
             width: auto;
+            margin-bottom: 15px;
+        }
+
+        .profile-text {
+            font-size: 0.9rem;
+            color: var(--primary-color);
+            letter-spacing: 0.05em;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+
+        main {
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .status-tag {
-            font-size: 11px;
+            font-size: 10px;
             letter-spacing: 0.25em;
             color: var(--accent-color);
             text-transform: uppercase;
             margin-bottom: 12px;
             font-weight: 700;
-            opacity: 0.8;
+            opacity: 0.9;
+            border: 1px solid rgba(188, 126, 157, 0.3);
+            padding: 4px 12px;
+            border-radius: 4px;
+            display: inline-block;
         }
 
         .headline {
-            font-size: 18px;
+            font-size: 1.15rem;
             letter-spacing: 0.05em;
-            color: var(--primary-color);
+            color: var(--text-color);
             font-weight: 400;
         }
 
-        /* フッターの微調整 */
         footer {
+            margin-top: 40px;
             text-align: center;
+            border-top: 1px solid rgba(99, 112, 174, 0.1);
+            padding-top: 20px;
+            width: 100%;
         }
-        .footer-links {
-            margin-top: 8px;
+
+        .copyright {
+            font-size: 11px;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
         }
+
         .footer-links a {
-            font-size: 10px;
-            color: #ccc;
+            font-size: 11px;
+            color: var(--accent-color);
             text-decoration: none;
             letter-spacing: 0.05em;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        
+        .footer-links a:hover {
+            opacity: 0.6;
+        }
+
+        .page-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            width: 100%;
+            padding: 80px 20px;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
+    <div class="gradient-bg"></div>
 
-    <div class="container">
-        <header>
-            <img src="images/title.png" alt="n=1" class="title-img">
-            <div class="profile-text">Simple Tools for Quiet Moments.</div>
-        </header>
+    <div class="page-wrapper">
+        <div class="container">
+            <div class="main-card content-card">
+                <header>
+                    <img src="images/title.png" alt="n=1" class="title-img">
+                    <div class="profile-text">Simple Tools for Quiet Moments.</div>
+                </header>
 
-        <main>
-            <div class="status-tag">Work in progress</div>
-            <div class="headline">Refining in silence.</div>
-        </main>
+                <main>
+                    <div><span class="status-tag">Work in progress</span></div>
+                    <div class="headline">Refining in silence.</div>
+                </main>
 
-        <footer>
-            <div class="copyright">&copy; 2026 n=1</div>
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
+                <footer>
+                    <div class="copyright">&copy; 2026 n=1</div>
+                    <div class="footer-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                    </div>
+                </footer>
             </div>
-        </footer>
+        </div>
     </div>
 
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P91DCVD7WL"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

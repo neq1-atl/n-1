@@ -4,39 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | n=1</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 0 20px;
-            line-height: 1.8;
-            color: #333;
-            font-family: sans-serif;
-            background-color: #fafafa; /* indexと合わせた微調整 */
+        .policy-container {
+            max-width: 720px;
+            margin: 80px auto;
+            padding: 40px;
+            text-align: left;
         }
-        h1 { font-size: 1.5rem; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 40px; }
-        h2 { font-size: 1.1rem; margin-top: 30px; }
-        p, li { font-size: 0.9rem; }
-        footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; font-size: 0.8rem; }
-        a { color: #888; text-decoration: none; border-bottom: 1px solid #ddd; }
+        .policy-title {
+            color: var(--text-color);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+        h2 {
+            color: var(--primary-color);
+            font-size: 1.15rem;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 1.3rem;
+            background: var(--accent-color);
+            margin-right: 12px;
+            border-radius: 2px;
+        }
+        p, li {
+            font-size: 0.92rem;
+            line-height: 1.8;
+            color: var(--text-color);
+            opacity: 0.9;
+        }
+        .footer-action {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(99, 112, 174, 0.1);
+            text-align: center;
+        }
+        .back-link {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+        .back-link:hover {
+            opacity: 0.6;
+        }
     </style>
 </head>
-<body>
-    <h1>Privacy Policy</h1>
-    <p>n=1（以下「当方」）は、提供するウェブサイトおよびスマートフォン用アプリケーション（以下「本サービス」）における、ユーザーの情報の取扱いについて、以下の通り定めます。</p>
+<body class="policy-page">
+    <div class="gradient-bg"></div>
 
-    <h2>1. アクセス解析ツールについて</h2>
-    <p>当方のウェブサイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。データの収集のためにCookie（クッキー）を使用していますが、これらは匿名で収集されており、個人を特定するものではありません。</p>
+    <div class="container">
+        <div class="policy-container content-card">
+            <h1 class="policy-title">Privacy Policy</h1>
+            
+            <p>n=1（以下「当方」）は、提供するウェブサイトおよびスマートフォン用アプリケーション（以下「本サービス」）における、ユーザーの情報の取扱いについて、以下の通り定めます。</p>
 
-    <h2>2. データの利用目的</h2>
-    <p>本サービスでは、利用状況の分析、不具合の修正、およびサービスの利便性向上を目的として、個人を特定できない範囲で情報を取得する場合があります。</p>
+            <h2>1. アクセス解析ツールについて</h2>
+            <p>当方のウェブサイトでは、Googleによるアクセス解析ツール「Googleアナリティクス」を使用しています。データの収集のためにCookie（クッキー）を使用していますが、これらは匿名で収集されており、個人を特定するものではありません。</p>
 
-    <h2>3. お問い合わせ</h2>
-    <p>本ポリシーに関するお問い合わせは、n=1までご連絡ください。</p>
-    
-    <footer>
-        <a href="index.html">← Back to Home</a>
-    </footer>
+            <h2>2. データの利用目的</h2>
+            <p>本サービスでは、利用状況の分析、不具合の修正、およびサービスの利便性向上を目的として、個人を特定できない範囲で情報を取得する場合があります。</p>
+
+            <h2>3. お問い合わせ</h2>
+            <p>本ポリシーやサービスに関するお問い合わせは、<a href="contact.html" style="color: var(--accent-color); font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(188, 126, 157, 0.4);">お問い合わせフォーム</a>よりご連絡ください。</p>
+            
+            <div class="footer-action">
+                <a href="index.html" class="back-link">← Back to Home</a>
+            </div>
+        </div>
+    </div>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P91DCVD7WL"></script>
     <script>
