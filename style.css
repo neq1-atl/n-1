@@ -98,12 +98,12 @@ p {
 /* --- Page: Index --- */
 .main-card {
     max-width: 480px;
-    margin: 60px auto 40px;
+    margin: 40px auto 30px;
     text-align: center;
 }
 
 .main-card header {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 .title-img { height: 72px; margin-bottom: 15px; }
@@ -286,8 +286,8 @@ p {
 
 /* --- Page: Index (App & Essay Sections) --- */
 .app-section {
-    margin: 60px 0;
-    padding-top: 40px;
+    margin: 40px 0;
+    padding-top: 30px;
     border-top: 1px solid rgba(99, 112, 174, 0.1);
 }
 
@@ -315,9 +315,33 @@ p {
     margin-bottom: 24px;
 }
 
+/* --- Works Cards --- */
+
+.works-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.work-card {
+    border: 1px solid rgba(99, 112, 174, 0.15);
+    border-radius: var(--radius-card);
+    padding: 1.5rem;
+    background-color: #fafafa;
+}
+
+.work-card .app-icon {
+    margin-bottom: 1rem;
+}
+
+.work-card .store-badge-container {
+    margin-top: 1.5rem;
+}
+
 .essay-section {
-    margin: 60px 0;
-    padding: 40px 1rem 0;
+    margin: 40px 0;
+    padding: 30px 1rem 0;
     border-top: 1px solid rgba(99, 112, 174, 0.1);
 }
 
@@ -326,16 +350,24 @@ p {
     justify-content: center;
     text-decoration: none;
     padding: 0.5rem;
-    transition: opacity 0.3s ease;
-}
-
-.essay-banner:hover {
-    opacity: 0.6;
 }
 
 .essay-logo {
     width: 60px;
     height: auto;
+}
+
+/* --- Support Section --- */
+.support-section {
+  margin: 40px 0;
+  padding: 30px 1rem 0;
+  border-top: 1px solid rgba(99, 112, 174, 0.1);
+}
+
+.support-widget-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
 
 .store-badge-container {
